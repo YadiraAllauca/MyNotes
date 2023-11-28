@@ -1,0 +1,56 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  background-color: #F2DDB6;
+  color: rgb(100, 48, 48);
+}
+.headerDark {
+  background-color: black;
+  color: white;
+}
+h2 {
+  padding-top: 0.5em;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: overline;
+}
+.right {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+mat-button-toggle {
+  height: 75%;
+  margin-top: 0.1em;
+  background-color: white;
+}
+.mat-button-toggle-checked {
+  background-color: #747474;
+  border: none;
+}
+.user {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 20px;
+  font-weight: bold;
+}
+.buttonMenu {
+  color: rgb(100, 48, 48);;
+}
+.buttonMenu:hover {
+  background-color: #faf1d8;
+}
+.buttonMenuDark {
+  color: black;
+}
+.buttonMenuDark:hover {
+  background-color: #e2ded0;
+}
+.menuOptions {
+  font-family: "Trebuchet MS";
+  font-size: 17px;
+  font-weight: bold;
+}

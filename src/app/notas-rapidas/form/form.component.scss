@@ -1,0 +1,16 @@
+.panel-container
+{
+  width: 600px;
+}
+.sizeInput{
+  height: 50px;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 18px;
+  color: rgb(76, 37, 37) !important;
+}
+::ng-deep .mat-form-field-appearance-outline.mat-focused
+  .mat-form-field-outline-thick {
+  color: #a45c40 !important;
+}

@@ -1,0 +1,21 @@
+table{
+  background-color: white;
+  font-family: 'Noto Serif Khojki', serif;
+}
+th{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(100, 48, 48);
+}
+td{
+  font-size:16px;
+  color: black;
+  border-top: 1px solid #F2DDB6;
+}
+.highline:hover{
+  background-color: #faf1d8;
+}
+.extension{
+   display: flex;
+   flex-flow: column;
+}

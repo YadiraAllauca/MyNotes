@@ -1,0 +1,28 @@
+.prueba{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+.prueba:hover{
+  background-color: #faf1d8;
+}
+mn-table{
+  width: 100%;
+}
+.prueba2{
+  margin-top: 2em;
+  padding-left: 1em;
+}
+mat-icon{
+  padding-top: 1em;
+  color: rgb(100, 48, 48);
+}
+mat-icon:hover{
+ background-color: rgb(229, 216, 216);
+}
+.align-button{
+   display: flex;
+   text-align: right end;
+  justify-content: space-between;
+}
+

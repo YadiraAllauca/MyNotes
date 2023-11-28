@@ -1,0 +1,26 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+  <h3>{{ title }}</h3>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-dialog-content>
+  <form fxLayout="column" [formGroup] = "group">
+    <mat-form-field appearance="outline">
+      <mat-label>Título</mat-label>
+    <input type="text" matInput formControlName="title" maxlength="15">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Contenido</mat-label>
+    <textarea type="text" matInput formControlName="content" maxlength="85" class="sizeInput"></textarea>
+    </mat-form-field>
+    <div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
+      <button mat-stroked-button type="button" [disabled]="group.invalid"
+      (click)="save()">
+        Grabar</button>
+     <button mat-stroked-button type="button" mat-dialog-close>
+        Cancelar</button>
+    </div>
+  </form>
+  <!-- action en form provoca el recargo de la página -->
+</mat-dialog-content>

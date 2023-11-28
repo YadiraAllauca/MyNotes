@@ -1,0 +1,19 @@
+.prueba{
+  display: flex;
+  height: 85%;
+  width: 100%;
+}
+mat-tab-group{
+  height:95%;
+  background-color: white;
+}
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  color: rgb(100, 48, 48);
+}
+::ng-deep .mat-ink-bar {
+background-color: #F2DDB6 !important;
+}
+.align-button{
+    text-align: right;
+    color: rgb(100, 48, 48)
+}

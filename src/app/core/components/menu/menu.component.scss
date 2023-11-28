@@ -1,0 +1,42 @@
+mat-nav-list {
+  padding-right: 3em;
+}
+button {
+  height: 20vh;
+  width: 10vw;
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 1.9vw;
+}
+.button {
+  background-color: #F2DDB6;
+  color: rgb(100, 48, 48);
+  border: 1px solid #a45c40;
+}
+.button:hover {
+  background-color: #faf1d8;
+  font-size: 2.2vw;
+  height: 21vh;
+  width: 11vw;
+}
+mat-list-item {
+  margin-top: 85px;
+}
+span {
+  margin-left: -10px;
+}
+::ng-deep .mat-list-base .mat-list-item .mat-list-item-content:hover {
+  background-color: #f6eee0;
+}
+::ng-deep .mat-list-base .mat-list-item .mat-list-item-content,
+.mat-list-base .mat-list-option .mat-list-item-content {
+  width: 10vw;
+}
+//uso en dark-mode:
+// .buttonDark {
+//   background-color: #4e4f50;
+//   color: white;
+//   border: 1px solid white;
+// }
+// .buttonDark:hover {
+//   background-color: #647c90;
+// }

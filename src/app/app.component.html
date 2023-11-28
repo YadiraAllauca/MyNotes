@@ -1,0 +1,9 @@
+<header>
+  <mn-header (onDark)="darkPressed($event)"></mn-header>
+</header>
+<body fxLayout="column" class="{{ pressed ? 'bodyDark' : 'body' }}">
+  <div class="row1">
+    <mn-menu></mn-menu>
+    <router-outlet></router-outlet>
+  </div>
+</body>
