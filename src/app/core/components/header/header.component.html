@@ -1,0 +1,29 @@
+<mat-toolbar class="{{ pressed ? 'headerDark' : 'header' }}">
+  <h2>Mis tableros</h2>
+  <div class="right">
+    <mat-button-toggle (click)="darkPressed()">
+      <mat-icon>dark_mode</mat-icon>
+    </mat-button-toggle>
+    <hr />
+    <button mat-button [matMenuTriggerFor]="menu">
+      <span class="user">Nickname</span>
+      <mat-icon>keyboard_double_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button
+        mat-menu-item
+        class="{{ pressed ? 'buttonMenuDark' : 'buttonMenu' }}"
+      >
+        <mat-icon>settings</mat-icon>
+        <span class="menuOptions">Configuración</span><br />
+      </button>
+      <button
+        mat-menu-item
+        class="{{ pressed ? 'buttonMenuDark' : 'buttonMenu' }}"
+      >
+        <mat-icon>logout</mat-icon>
+        <span class="menuOptions">Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,27 @@
+<mn-header></mn-header>
+<mn-body>
+  <mat-tab-group>
+    <div *ngFor="let record of records">
+      <mat-tab label="{{ record.day }}">
+        <perfect-scrollbar class="heighMaxScrollBar">
+          <mn-table
+            [data]="record.activities"
+            [metaDataColumns]="metaDataColumns"
+          >
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef></th>
+              <td mat-cell *matCellDef="let row" class="align-button">
+                <button mat-icon-button>
+                  <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button>
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+          </mn-table>
+        </perfect-scrollbar>
+      </mat-tab>
+    </div>
+  </mat-tab-group>
+</mn-body>

@@ -1,0 +1,22 @@
+<mn-header></mn-header>
+<mn-body>
+  <perfect-scrollbar class="heighMaxScrollBar">
+    <mn-table [data]="data" [metaDataColumns]="metaDataColumns">
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let row" class="align-button">
+        <button mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    </mn-table>
+  </perfect-scrollbar>
+  <mn-paginator
+    (onChangePage)="changePage($event)"
+    [length]="totalRecords"
+  ></mn-paginator>
+</mn-body>

@@ -1,0 +1,27 @@
+<mn-header>
+</mn-header>
+  <button class="button" mat-stroked-button (click)="openForm()">{{ text }}</button>
+<mn-body>
+  <perfect-scrollbar>
+    <mat-grid-list cols="4" rowHeight="1:1">
+      <div *ngFor="let nota of records">
+        <mat-grid-tile>
+          <mn-card
+            [title]="nota.title"
+            [date]="nota.date"
+            [content]="nota.content"
+          >
+          </mn-card>
+          <div>
+          <button mat-icon-button (click)="openForm(nota)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="delete(nota._id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          </div>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </perfect-scrollbar>
+</mn-body>

@@ -1,0 +1,56 @@
+.logo {
+  text-align: center;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+.logo img {
+  height: 10vh;
+}
+.logo span {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(100, 48, 48);
+}
+.form{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.field{
+  width: 25vw;
+  padding-left:3em;
+}
+input {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 19px;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 18px;
+  color: rgb(76, 37, 37) !important;
+}
+::ng-deep .mat-form-field-appearance-outline.mat-focused
+  .mat-form-field-outline-thick {
+  color: #a45c40 !important;
+}
+.sectionButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5em;
+}
+#buttonIS {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 19px;
+  background-color: rgb(100, 48, 48);
+  color: white;
+}
+.register {
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 19px;
+  color:  rgb(100, 48, 48);
+  margin-top: 2em;
+  text-decoration: underline;
+  text-align: center;
+}

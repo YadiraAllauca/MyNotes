@@ -1,0 +1,37 @@
+<form fxLayout="column">
+  <div class="logo">
+    <span>My Notes</span>
+    <img src="../../../../assets/logo.ico" />
+  </div>
+  <div class="box">
+    <div class="form">
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Nickname</mat-label>
+        <input #nic id="nickname" matInput  type="text" required />
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Contraseña</mat-label>
+        <input #pass id="password"
+          matInput
+          type="{{ hidePassword ? 'password' : 'text' }}"
+          required
+        />
+        <button
+          mat-icon-button
+          type="button"
+          matSuffix
+          (click)="hidePassword = !hidePassword"
+        >
+          <mat-icon>{{
+            hidePassword ? "visibility_off" : "visibility"
+          }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="sectionButton">
+      <button mat-raised-button id="buttonIS" (click)="findUser(nic.value, pass.value)">Iniciar Sesión</button>
+    </div>
+  </div>
+  <span class="register">Registrarse</span>
+</form>
