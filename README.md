@@ -10,7 +10,7 @@ These instructions will guide you through setting up and running the application
 
 Make sure you have the following configured:
 
-- [Angular de Node](https://angular.io/)<br>
+- [Angular - Node](https://angular.io/)<br>
   💡 Remember that you must have experience using Node.
   
 - [Repository - Backend](https://github.com/YadiraAllauca/BackendMyNotes) <br>
