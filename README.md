@@ -13,7 +13,7 @@ Make sure you have the following configured:
 - [Angular de Node](https://angular.io/)<br>
   💡 Remember that you must have experience using Node.
   
-- [Repositorio - Backend](https://github.com/YadiraAllauca/BackendMyNotes) <br>
+- [Repository - Backend](https://github.com/YadiraAllauca/BackendMyNotes) <br>
   This is made with Node. Remember to review the documentation.
 
 ### ⚙️ Installation
